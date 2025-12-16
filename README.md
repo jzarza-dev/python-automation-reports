@@ -1,20 +1,21 @@
 # 🐍 Automatización de Archivos y Reportes en Python
 
-Proyecto desarrollado en Python enfocado en la automatización de tareas
-mediante el manejo de archivos CSV y generación de reportes en consola.
+Proyecto desarrollado en Python para automatizar la lectura de archivos CSV
+y generar reportes mediante un menú interactivo en consola.
 
 ---
 
 ## 🚀 Funcionalidades
 - Lectura de archivos CSV
-- Menú interactivo en consola
-- Generación de reportes automáticos
+- Validación básica de datos
+- Generación de reportes
+- Menú interactivo
 
 ---
 
-## 🛠 Tecnologías utilizadas
+## 🛠 Tecnologías
 - Python 3
-- Librería estándar: csv
+- Librería csv
 
 ---
 
