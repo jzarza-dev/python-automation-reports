@@ -5,6 +5,13 @@ def leer_datos():
         lector = csv.DictReader(archivo)
         return list(lector)
 
+def validar_datos(datos):
+    datos_validos = []
+    for d in datos:
+        if d['edad'].isdigit():
+            datos_validos.append(d)
+    return datos_validos
+
 def mostrar_datos(datos):
     for d in datos:
         print(f"{d['id']} - {d['nombre']} - {d['edad']} - {d['carrera']}")
@@ -14,7 +21,7 @@ def generar_reporte(datos):
     print(f"\nTotal de registros: {total}")
 
 def menu():
-    datos = leer_datos()
+    datos = validar_datos(leer_datos())
     while True:
         print("\n--- MENÚ ---")
         print("1. Mostrar datos")
